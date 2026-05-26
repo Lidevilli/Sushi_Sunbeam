@@ -1,0 +1,18 @@
+/* базовые стили */
+@import 'basic/reset.css';
+@import 'basic/vars.css';
+@import 'basic/global.css';
+@import 'basic/fonts.css';
+
+@import 'components/header.css';
+@import 'components/footer.css';
+@import 'components/btn.css';
+@import 'components/cards.css';
+
+/* Страницы */
+@import 'pages/home.css';
+@import 'pages/menu.css';
+@import 'pages/about.css';
+@import 'pages/reviews.css';
+@import 'pages/cart.css';
+@import 'pages/contacts.css';

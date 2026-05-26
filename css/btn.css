@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn--primary {
+  background-color: #f5d76e;
+  color: #000;
+  border: none;
+}
+
+.btn--primary:hover {
+  background-color: #f9e58c;
+}
+
+.btn--accent {
+  background-color: #ffb6b6;
+  color: #fff;
+  border: none;
+}
+
+.btn--accent:hover {
+  background-color: #ff8c8c;
+}

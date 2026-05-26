@@ -1,0 +1,50 @@
+.about {
+  padding-block: 32px 40px;
+}
+
+.about__block {
+  margin-top: 24px;
+  display: flex;
+  background-color: var(--color-surface-light);
+  padding: 15px;
+  border-radius: 12px;
+  gap: 5px;
+}
+
+.about__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.about__text {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  padding: 5px 0;
+}
+
+.about__block--benefits {
+  justify-content: space-between;
+}
+
+.about-benefits {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.about__block--img {
+  max-width: 220px;
+  border-radius: 12px;
+}
+
+.left2 {
+  text-align: right;
+}
+
+@media (min-width: 769px) {
+  .about__block--team .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+

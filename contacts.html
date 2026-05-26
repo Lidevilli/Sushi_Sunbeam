@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="contacts">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты — Sushi‑Sunbeam</title>
+  <meta name="description" content="Контакты Sushi‑Sunbeam: адрес, телефоны, email, соцсети и форма обратной связи.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="css/basic/reset.css">
+  </head>
+
+<body class="page page--contacts">
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img class="logo" aria-hidden="true" src="img2/суши_лучик.svg" alt="">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item" data-page="home"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item" data-page="menu"><a href="menu.html" class="nav__link">Меню</a></li>
+          <li class="nav__item" data-page="about"><a href="about.html" class="nav__link">О нас</a></li>
+          <li class="nav__item" data-page="reviews"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item" data-page="contacts"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          <li class="nav__item" data-page="cart"><a href="cart.html" class="nav__link nav__link--accent">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contacts">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-header__title">Контакты</h1>
+        </div>
+
+        <div class="contacts__layout">
+          <div class="contacts__left">
+            <article class="contact-card">
+              <h2 class="contact-card__title">Офис и режим работы</h2>
+              <p class="contact-card__text">Амстердам, ул. Sakura Straat, 12</p>
+              <p class="contact-card__text">Ежедневно: 10:00–23:00</p>
+            </article>
+
+            <article class="contact-card">
+              <h2 class="contact-card__title">Телефон</h2>
+              <p class="contact-card__text">Городской: +X-(XXX)-XXX-XX-XX</p>
+              <p class="contact-card__text">Мобильный: +X-(XXX)-XXX-XX-XX</p>
+            </article>
+
+            <article class="contact-card">
+              <h2 class="contact-card__title">Электронная почта</h2>
+              <p><a class="contact-card__text" href="mailto:hello@sushi-sunbeam.nl">sushi-sunbeam@mail</a></p>
+            </article>
+
+            <article class="contact-card">
+              <h2 class="contact-card__title">Соцсети</h2>
+              <p class="contact-card__text">
+                <a class="contact-card__text" href="#" aria-label="Telegram Sushi‑Sunbeam">Telegram</a> ·
+                <a class="contact-card__text" href="#" aria-label="Instagram Sushi‑Sunbeam">Instagram</a>
+              </p>
+            </article>
+          </div>
+
+          <div class="contacts__right">
+            <div class="contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.100044329867!2d39.86644622255166!3d44.758374359728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4054fe3a5706f539%3A0x8ca386d3f5f1e1e2!2z0KLQtdGF0L3QuNC60YPQvCDQkdC40LfQvdC10YEg0Lgg0J_RgNCw0LLQvg!5e0!3m2!1sru!2sse!4v1779778346048!5m2!1sru!2sse"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <section class="contacts__form-block">
+          <h2 class="contacts__form-title">Форма обратной связи</h2>
+          <form class="form form--contact" id="contact-form" novalidate>
+            <div class="form__field">
+              <label for="contact-name" class="form__label">Имя *</label>
+              <input type="text" id="contact-name" name="name" class="form__input" required>
+              <span class="form__error" data-for="contact-name"></span>
+            </div>
+            <div class="form__field">
+              <label for="contact-phone" class="form__label">Телефон</label>
+              <input type="tel" id="contact-phone" name="phone" class="form__input">
+              <span class="form__error" data-for="contact-phone"></span>
+            </div>
+            <div class="form__field">
+              <label for="contact-email" class="form__label">E‑mail</label>
+              <input type="email" id="contact-email" name="email" class="form__input">
+              <span class="form__error" data-for="contact-email"></span>
+            </div>
+            <div class="form__field">
+              <label for="contact-comment" class="form__label">Комментарий *</label>
+              <textarea id="contact-comment" name="comment" class="form__textarea" rows="4" required></textarea>
+              <span class="form__error" data-for="contact-comment"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <div class="logo footer__logo">
+          <img src="img2/суши_лучик.svg" alt="">
+        </div>
+        <p class="footer__desc">Современный сервис доставки японской кухни с акцентом на свежесть, эстетику и тёплую
+          атмосферу.</p>
+      </div>
+      <div class="footer__menu">
+        <h2 class="footer__title">Меню</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="menu.html#rolls" class="footer__link">Роллы</a></li>
+          <li class="footer__item"><a href="menu.html#sets" class="footer__link">Сеты</a></li>
+          <li class="footer__item"><a href="menu.html#drinks" class="footer__link">Напитки</a></li>
+          <li class="footer__item"><a href="menu.html#desserts" class="footer__link">Десерты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">© 2026 Sushi‑Sunbeam. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

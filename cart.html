@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="cart">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина — Sushi‑Sunbeam</title>
+  <meta name="description"
+    content="Корзина заказов Sushi‑Sunbeam. Проверьте состав заказа, выберите способ доставки и оплаты.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="css/basic/reset.css">
+  </head>
+
+<body class="page page--cart">
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img class="logo" aria-hidden="true" src="img2/суши_лучик.svg" alt="">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item" data-page="home"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item" data-page="menu"><a href="menu.html" class="nav__link">Меню</a></li>
+          <li class="nav__item" data-page="about"><a href="about.html" class="nav__link">О нас</a></li>
+          <li class="nav__item" data-page="reviews"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item" data-page="contacts"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          <li class="nav__item" data-page="cart"><a href="cart.html" class="nav__link nav__link--accent">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="cart">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-header__title">Корзина</h1>
+        </div>
+
+        <div class="cart__layout">
+          <section class="cart__items" aria-label="Список товаров в корзине">
+            <article class="cart-item">
+              <div class="cart-item__info">
+                <h2 class="cart-item__title">Калифорния</h2>
+                <div class="cart-item__info__bottom">
+                  <p class="cart-item__meta">250 г</p>
+                  <p class="cart-item__price">520₽</p>
+                </div>
+              </div>
+              <div class="cart-item__controls">
+                <div class="cart-item__controls__inner">
+                <button class="cart-item__btn cart-item__btn--minus" type="button"
+                  aria-label="Уменьшить количество">−</button>
+                <span class="cart-item__qty">1</span>
+                <button class="cart-item__btn cart-item__btn--plus" type="button"
+                  aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+
+            </article>
+
+            <article class="cart-item">
+              <div class="cart-item__info">
+                <h2 class="cart-item__title">Филадельфия</h2>
+                <div class="cart-item__info__bottom">
+                  <p class="cart-item__meta">260 г</p>
+                  <p class="cart-item__price">520₽</p>
+                </div>
+
+              </div>
+              <div class="cart-item__controls"> 
+                <div class="cart-item__controls__inner">
+                <button class="cart-item__btn cart-item__btn--minus" type="button"
+                  aria-label="Уменьшить количество">−</button>
+                <span class="cart-item__qty">2</span>
+                <button class="cart-item__btn cart-item__btn--plus" type="button"
+                  aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+
+            </article>
+          </section>
+
+          <div class="cart__summary">
+            <div class="cart__summary__inner">
+              <div class="cart-summary__row">
+                <span class="cart-summary__label">Итого</span>
+                <span class="cart-summary__value">520₽</span>
+              </div>
+
+              <div class="cart-summary__row">
+                <label for="delivery" class="cart-summary__label">Способ доставки</label>
+                <select id="delivery" class="cart-summary__select">
+                  <option value="courier">Курьер</option>
+                  <option value="pickup">Самовывоз</option>
+                </select>
+              </div>
+
+              <div class="cart-summary__row">
+                <label for="payment" class="cart-summary__label">Способ оплаты</label>
+                <select id="payment" class="cart-summary__select">
+                  <option value="card-online">Картой онлайн</option>
+                  <option value="card-courier">Картой курьеру</option>
+                  <option value="cash">Наличными</option>
+                </select>
+              </div>
+
+              <button class="btn btn--primary cart-summary__btn" type="button">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <div class="logo footer__logo">
+          <img src="img2/суши_лучик.svg" alt="">
+        </div>
+        <p class="footer__desc">Современный сервис доставки японской кухни<br>с акцентом на свежесть, эстетику и тёплую
+          атмосферу.</p>
+      </div>
+      <div class="footer__menu">
+        <h2 class="footer__title">Меню</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="menu.html#rolls" class="footer__link">Роллы</a></li>
+          <li class="footer__item"><a href="menu.html#sets" class="footer__link">Сеты</a></li>
+          <li class="footer__item"><a href="menu.html#drinks" class="footer__link">Напитки</a></li>
+          <li class="footer__item"><a href="menu.html#desserts" class="footer__link">Десерты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">© 2026 Sushi‑Sunbeam. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

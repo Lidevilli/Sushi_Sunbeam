@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="reviews">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Отзывы — Sushi‑Sunbeam</title>
+  <meta name="description"
+    content="Отзывы гостей о доставке суши и роллов Sushi‑Sunbeam. Оставьте свой отзыв о сервисе и блюдах.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="css/basic/reset.css">
+  
+</head>
+
+<body class="page page--reviews">
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img class="logo" aria-hidden="true" src="img2/суши_лучик.svg" alt="">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item" data-page="home"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item" data-page="menu"><a href="menu.html" class="nav__link">Меню</a></li>
+          <li class="nav__item" data-page="about"><a href="about.html" class="nav__link">О нас</a></li>
+          <li class="nav__item" data-page="reviews"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item" data-page="contacts"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          <li class="nav__item" data-page="cart"><a href="cart.html" class="nav__link nav__link--accent">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="reviews">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-header__title">Отзывы гостей</h1>
+        </div>
+
+        <section class="reviews__list" aria-label="Список отзывов">
+          <article class="review-card">
+            <h2 class="review-card__name">Екатерина</h2>
+            <p class="review-card__text">Очень понравились роллы «Филадельфия» — свежие, аккуратные и доставили быстрее,
+              чем обещали.</p>
+          </article>
+          <article class="review-card">
+            <h2 class="review-card__name">Алексей</h2>
+            <p class="review-card__text">Заказываем здесь уже год, стабильно вкусно и без сюрпризов. Нравится
+              минималистичный сайт.</p>
+          </article>
+        </section>
+
+        <section class="reviews__form-block">
+          <h2 class="reviews__form-title">Оставить отзыв</h2>
+          <form class="form form--review" id="review-form" novalidate>
+            <div class="form__field">
+              <label for="review-name" class="form__label">Имя *</label>
+              <input type="text" id="review-name" name="name" class="form__input" required>
+              <span class="form__error" data-for="review-name"></span>
+            </div>
+            <div class="form__field">
+              <label for="review-text" class="form__label">Текст отзыва *</label>
+              <textarea id="review-text" name="text" class="form__textarea" rows="4" required></textarea>
+              <span class="form__error" data-for="review-text"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Отправить отзыв</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <div class="logo footer__logo">
+          <img src="img2/суши_лучик.svg" alt="">
+        </div>
+        <p class="footer__desc">Современный сервис доставки японской кухни с акцентом на свежесть, эстетику и тёплую
+          атмосферу.</p>
+      </div>
+      <div class="footer__menu">
+        <h2 class="footer__title">Меню</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="menu.html#rolls" class="footer__link">Роллы</a></li>
+          <li class="footer__item"><a href="menu.html#sets" class="footer__link">Сеты</a></li>
+          <li class="footer__item"><a href="menu.html#drinks" class="footer__link">Напитки</a></li>
+          <li class="footer__item"><a href="menu.html#desserts" class="footer__link">Десерты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">© 2026 Sushi‑Sunbeam. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
