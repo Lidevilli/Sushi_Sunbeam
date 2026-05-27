@@ -47,9 +47,9 @@
 }
 
 .hero-logo3d {
-  max-width: 420px;
+  max-width: 460px;
   position: absolute;
-  top: 0px;
+  top: -20px;
   right: 0px;
   transform: rotateX(180deg);
 
