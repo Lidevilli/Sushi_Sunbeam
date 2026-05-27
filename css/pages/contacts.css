@@ -3,7 +3,7 @@
 }
 
 .contacts__layout {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
   gap: 16px;
   margin-bottom: 24px;
@@ -53,5 +53,9 @@ iframe {
   .contacts__left {
     text-align: center;
     justify-items: center;
+  }
+
+  .contacts__layout {
+    display: grid;
   }
 }
