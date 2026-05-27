@@ -40,9 +40,18 @@ iframe {
   margin-bottom: 12px;
 }
 
-@media (min-width: 769px) {
-  .contacts__layout {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: flex-start;
+
+@media (max-width: 768px) {
+  .contacts iframe {
+    display: block;
+    width: 100% ;      
+    max-width: 420px;            
+    height: 220px ;    
+    margin-inline: auto;       
+  }
+
+  .contacts__left {
+    text-align: center;
+    justify-items: center;
   }
 }
