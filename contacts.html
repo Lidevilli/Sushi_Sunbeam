@@ -90,17 +90,17 @@
             </div>
             <div class="form__field">
               <label for="contact-phone" class="form__label">Телефон</label>
-              <input type="tel" id="contact-phone" name="phone" class="form__input">
+              <input type="tel" id="contact-phone" type="number" name="phone" class="form__input">
               <span class="form__error" data-for="contact-phone"></span>
             </div>
             <div class="form__field">
               <label for="contact-email" class="form__label">E‑mail</label>
-              <input type="email" id="contact-email" name="email" class="form__input">
+              <input type="email" id="contact-email" type="email" name="email" class="form__input">
               <span class="form__error" data-for="contact-email"></span>
             </div>
             <div class="form__field">
               <label for="contact-comment" class="form__label">Комментарий *</label>
-              <textarea id="contact-comment" name="comment" class="form__textarea" rows="4" required></textarea>
+              <textarea id="contact-comment" name="comment" maxlength="255" class="form__textarea" rows="4" required></textarea>
               <span class="form__error" data-for="contact-comment"></span>
             </div>
             <button type="submit" class="btn btn--primary">Отправить заявку</button>
