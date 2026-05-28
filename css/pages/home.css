@@ -268,7 +268,10 @@
 .video-block__inner {
   display: flex;
   justify-content: center;
- 
+  background-color: var(--color-surface-light);
+  padding: 5px;
+  border-radius: 12px;
+  
 }
 
 video {
