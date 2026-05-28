@@ -10,6 +10,7 @@
   background-color: var(--color-surface-light);
   padding: 15px;
   border-radius: 12px;
+  justify-content: space-between;
 }
 
 .contact-card__text {
